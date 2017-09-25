@@ -1,4 +1,5 @@
-var orm = require("../config/orm");
+//var orm = require("../config/orm");
+var orm = require(path.join(__dirname,"..", "config", "orm.js"));
 var burger = {
   all: function(cb) {
     orm.all("burgers", function(res) {
