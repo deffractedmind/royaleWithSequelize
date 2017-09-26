@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var burger = require("../models/burger");
+//var burger = require("../models/burger");
+var burger = require(path.join(__dirname,"..", "models", "burger.js"));
 // get route -> index
 router.get("/", function(req, res) {
   res.redirect("/burgers");
